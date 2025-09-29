@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightSpeak - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fredoka One', sans-serif;
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to top, rgba(168,230,255,0.7), rgba(217,250,255,0.7)),
+                  url("assests/login.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      background: #ffffffd9;
+      padding: 30px;
+      border-radius: 25px;
+      width: 330px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    h2 { color: #ff9800; margin-bottom: 15px; }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      font-family: 'Fredoka One', sans-serif;
+    }
+    .btn {
+      background: #ff9800;
+      color: white;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .btn:hover { background: #fb8c00; }
+    a { display: block; margin-top: 10px; color: #007bff; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <!-- This sends data to login.php -->
+    <form method="POST" action="login.php">
+      <input type="text" name="username" placeholder="Enter Username" required>
+      <input type="password" name="password" placeholder="Enter Password" required>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <a href="signup.php">Create an account</a>
+  </div>
+</body>
+</html>
