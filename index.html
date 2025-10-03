@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Beyine E And i</title>
   <style>
     body {
@@ -75,18 +75,49 @@
       width: 20%;
       height: 20%;
     }
+
+    /* Circular Chatbot Button */
+    .chatbot-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #ff4081;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      border: none;
+      cursor: pointer;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .chatbot-btn::before {
+      content: "🤖";
+      font-size: 2em;
+      color: #fff;
+    }
+    .chatbot-btn:hover {
+      background: #c60055;
+    }
   </style>
 </head>
 <body>
   <div class="game-container">
-    <img src="./assests/image.png" alt="Game UI">
+    <img src="./assests/image.png" alt="Game UI" />
 
-    <!-- Clickable Buttons --><button class="btn btn-start" onclick="window.location.href='https://english.gamer.gd/game.php'"></button>
-
+    <!-- Clickable Buttons -->
+    <button class="btn btn-start" onclick="window.location.href='https://english.gamer.gd/game.php'"></button>
     <button class="btn btn-hello" onclick="window.location.href='https://studio-8806440108-ada24.web.app/grammar'"></button>
     <button class="btn btn-goodmorning" onclick="window.location.href='https://studio-8806440108-ada24.web.app/story'"></button>
     <button class="btn btn-mic" onclick="window.location.href='https://studio-8806440108-ada24.web.app/pronunciation'"></button>
     <button class="btn btn-reward" onclick="window.location.href='https://studio-8806440108-ada24.web.app/quiz'"></button>
   </div>
+
+  <!-- Circular Chatbot Button -->
+  <a href="https://9000-firebase-studio-1756700314012.cluster-mwsteha33jfdowtvzffztbjcj6.cloudworkstations.dev/ai-buddy" target="_blank" class="chatbot-btn" aria-label="Chatbot"></a>
 </body>
 </html>
